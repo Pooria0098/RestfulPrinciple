@@ -32,4 +32,4 @@ class Contact(models.Model):
                                blank=True)
 
     def __str__(self):
-        return self.user
+        return self.user.username
