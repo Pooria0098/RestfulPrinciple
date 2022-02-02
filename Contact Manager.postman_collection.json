@@ -1,0 +1,283 @@
+{
+	"info": {
+		"_postman_id": "26b0c31a-7c2b-44f9-863d-42abd3cae499",
+		"name": "Contact Manager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Group_List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/GroupService/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"GroupService",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Group_Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/GroupService/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"GroupService",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Contact_List",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer    eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQzODE2MDgyLCJpYXQiOjE2NDM4MTU3ODIsImp0aSI6ImM5ZjE4ZjFlYjk5YTQ4OWU4YTRkZTUxZDZlN2I5Mzk1IiwidXNlcl9pZCI6MX0.SLb2e6hlqiSfhS8PzU6Vmj6NFb3yQejlKPqKfkefG-k",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/ContactService/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"ContactService",
+						""
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Contact_Create",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer    eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQzODE1NjUxLCJpYXQiOjE2NDM4MTUzNTEsImp0aSI6IjQzYWMxOWFhMWUzYjRiMTRhNzA0MzkzMjQwY2UyZTFkIiwidXNlcl9pZCI6MX0.lC1MjCYyU-5vZaTdArHa8Ssud5UTcwbDeEYnCyElKbI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "pooria",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "tavana",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "tavanapooria9731@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "group",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "09029191775",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "No.13, Eftekhar St, Larestan Ave, first of Motahari",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/ContactService/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"ContactService",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Contact_Get",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer    eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQzODE2MDgyLCJpYXQiOjE2NDM4MTU3ODIsImp0aSI6ImM5ZjE4ZjFlYjk5YTQ4OWU4YTRkZTUxZDZlN2I5Mzk1IiwidXNlcl9pZCI6MX0.SLb2e6hlqiSfhS8PzU6Vmj6NFb3yQejlKPqKfkefG-k",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/ContactService/2/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"ContactService",
+						"2",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Contact_Put",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer    eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQzODE2MjkxLCJpYXQiOjE2NDM4MTU5OTEsImp0aSI6ImMxZWNhZTI3Nzg5OTQxOGFhNGRmOTlmZGQyYTQ5ZGFjIiwidXNlcl9pZCI6MX0.ESe8fNqRMqXnTb1voBH0U2OIyvhopQnChj-_Wo7M7Vk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "ali",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "hajari",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "hajari@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/ContactService/2/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"ContactService",
+						"2",
+						""
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Contact_Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer    eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQzODE2MjkxLCJpYXQiOjE2NDM4MTU5OTEsImp0aSI6ImMxZWNhZTI3Nzg5OTQxOGFhNGRmOTlmZGQyYTQ5ZGFjIiwidXNlcl9pZCI6MX0.ESe8fNqRMqXnTb1voBH0U2OIyvhopQnChj-_Wo7M7Vk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/ContactService/2/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"ContactService",
+						"2",
+						""
+					],
+					"query": [
+						{
+							"key": "Authorization",
+							"value": "Bearer    eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQzODE2MjkxLCJpYXQiOjE2NDM4MTU5OTEsImp0aSI6ImMxZWNhZTI3Nzg5OTQxOGFhNGRmOTlmZGQyYTQ5ZGFjIiwidXNlcl9pZCI6MX0.ESe8fNqRMqXnTb1voBH0U2OIyvhopQnChj-_Wo7M7Vk",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
