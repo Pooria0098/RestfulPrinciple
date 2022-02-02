@@ -1,0 +1,22 @@
+# pycharm files
+.idea/
+
+# sensitive data
+.env
+.env_dev
+.env_prod
+venv/
+
+# cache
+apps/__pycache__/
+__pycache__/
+
+# db
+db.sqlite3
+
+# mediafiles
+mediafiles
+/media
+
+staticfiles
+/static
